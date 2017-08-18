@@ -1,0 +1,47 @@
+#newtab-search-container{
+    /*border: 1px solid #c0c0c0;*/
+    width: 600px;
+    height: 36px;
+     /*div水平居中，垂直距上方的36% 采用绝对定位*/
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    /* 调整，使得相对于div框的中心而不是div的左上角*/
+    margin-left: -300px;
+    margin-top: -12.96px;
+}
+
+#newtab-search-icon{
+    background: url("../img/search-indicator-magnifying-glass.svg") no-repeat center;
+    height: 36px;
+    width: 36px;
+    border: 1px transparent;
+    position: absolute;
+}
+
+#newtab-search-text{
+    text-align: center;
+    height: 36px;
+    float: left;
+    width: 548px;
+    border: 1px solid #c0c0c0;
+    /*opacity: 0.9;*/
+}
+
+#newtab-search-submit{
+    height: 38px;
+    width: 48px;
+    float: left;
+    border: 1px solid #c0c0c0;
+    background: url("../img/demo.png") no-repeat center, #c0C0C0;
+    opacity: 0.8;
+}
+
+#newtab-search-submit:hover{
+    background-color: #1b6d85;
+}
+
+html{
+    background: url("../img/bac3.jpg");
+    background-size: cover;
+}
