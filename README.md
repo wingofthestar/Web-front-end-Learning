@@ -6,4 +6,4 @@
 
 ## Baidu Tab
 模范Baidu Tab页
-
+![Image text](https://github.com/wingofthestar/Web-front-end-Learning/blob/master/Baidu_Tab.png?raw=true)
