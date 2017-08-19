@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form demo</title>
+    <script type="text/javascript" src="FormDemo.js"></script>
+    <style>
+        textarea{
+            width: 600px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        强调表单的重要性，表单中填充的数据，往往就是把数据提交给后台，因此也是交互的一个点，如果表单没有写好，不能提交给数据给后台的
+        话是很不行的。
+        一般提交表单数据用的是post,这里都用get是因为方便看到浏览器地址栏的变化，（http://yourdiary.site/?name=abc&p
+        assword=123）注意浏览器地址栏的变化
+        ?后面就是get方式提交给后台的数据(通过URL地址栏就可以知道传递给了后台那些数据)。
+        因为我的博客后台，并没有和这些页面对接，所以，并不会接受这些参数，
+
+        yourdiary.site博客会接受name参数,地址栏输入http://yourdiary.site?name=博客 服务器就会做出相应跳转到http://yourdiary.site/博客/
+        页面，显示相应的博客列表
+        既然接受name参数，是不是什么值都可以传呢？实际上这里只接受“博客”或“首页”两个值，其他值都会跳转到错误页面(未找到相应的页面)。
+     -->
+    <!--
+        type: text/password/radio...等 type影响表单的显示和功能 type=submit：提交表单 type = reset: 表单重新填写 type = button:表单按钮
+        name: 提交给服务器的值为name1=value1&name2=value2
+        onclick: 点击表单按钮触发onclick中绑定的js脚本
+     -->
+    <form action="http://www.yourdiary.site" method="get">
+        <input type="text" name="username" placeholder="用户名"><br>
+        <input type="password" name="password" placeholder="密码"><br>
+        <input type="reset" value="重置">
+        <input type="submit" value="提交"><br>
+        <input type="button" onclick="">
+    </form>
+
+    <hr>
+
+    <!-- 单选框，勾选那个，提交对应的value值-->
+    <form action="http://www.yourdiary.site" method="get">
+        男：<input type="radio" name="sex" value="male">
+        女: <input type="radio" name="sex" value="female">
+        <input type="submit" value="提交">
+    </form>
+
+    <hr>
+    <!-- 复选框 -->
+    <form name="input" action="http://www.meiko.site" method="get">
+        I have a bike: <input type="checkbox" name="vehicle" value="Bike" checked="checked">
+        I have a car: <input type="checkbox" name="vehicle" value="Car">
+        I hava an airplane: <input type="checkbox" name="vehicle" value="Airplane">
+        <input type="submit" value="提交">
+    </form>
+
+    <hr>
+
+    <!--简单的下拉列表-->
+    <form action="http://www.yourdiary.site" method="get">
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <input type="submit" value="提交">
+    </form>
+
+    <hr>
+
+    <!--
+     文本域 :
+      在表单中输入大段文字时，需要用到文本域
+    -->
+    <!-- 常使用button + js脚本提交form表单，而非input type=submit提交表单, onclick绑定了FormDemo.js的submit()函数，点击出发
+    submit()函数执行提交操作 -->
+    <form action="http://www.yourdiary.site" method="get" id="textarea_form">
+        联系我们:<br>
+        <textarea placeholder="在这里输入内容" name="text"></textarea>
+        <!--<input type="submit" value="提交">-->
+        <input type="button" value="button提交" onclick="submit()">
+    </form>
+
+</body>
+</html>
