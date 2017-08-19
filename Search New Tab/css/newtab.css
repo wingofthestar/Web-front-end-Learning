@@ -1,7 +1,7 @@
 #newtab-search-container{
     /*border: 1px solid #c0c0c0;*/
     width: 600px;
-    height: 36px;
+    height: 38px;
      /*div水平居中，垂直距上方的36% 采用绝对定位*/
     position: absolute;
     left: 50%;
@@ -13,7 +13,7 @@
 
 #newtab-search-icon{
     background: url("../img/search-indicator-magnifying-glass.svg") no-repeat center;
-    height: 36px;
+    height: 38px;
     width: 36px;
     border: 1px transparent;
     position: absolute;
