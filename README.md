@@ -15,3 +15,5 @@
 * 浏览器中查看div盒模型发现input的边框是向里增大的，而button的边框却是向外增大的，查阅发现chrome浏览器中默认的input是content-box
 模型 而 button却是border-box模型（通过CSS3 box-sizing 属性手动将button调整为content-box模型）
 ![Image text](https://github.com/wingofthestar/Web-front-end-Learning/blob/master/img/%E7%9B%92%E6%A8%A1%E5%9E%8B.png?raw=true)
+
+采用了字体图标（https://github.com/FortAwesome/Font-Awesome） 按照文档直接引用即可。
