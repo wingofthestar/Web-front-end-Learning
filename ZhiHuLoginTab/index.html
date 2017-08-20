@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>知乎 - 与世界分享你的知识、经验和见解</title>
+    <link rel="shortcut icon" href="index.ico">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="index-main">
+    <div class="index-main-body">
+        <div class="index-header">
+            <h1 class="logo hide-text">知乎</h1>
+            <h2 class="subtitle">与世界分享你的知识、经验和见解</h2>
+        </div>
+        <div>
+            <div class="index-tab-navs">
+                <div class="navs-slider">
+                    <a href="#signup" class="active">注册</a>
+                    <a href="#signin" class>登录</a>
+                    <span class="navs-slider-bar"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="sign-flow">
+        <!-- 登录页用的，可以先不管他 -->
+<!--        <div class="view view-signin" data-za-module="SignInForm">
+            <form action="">
+                &lt;!&ndash; 页面上看不见，作用是传给服务器必要的参数 &ndash;&gt;
+                &lt;!&ndash;<input type="hidden" name="_xsrf" value="#">&ndash;&gt;
+                <div class="account input-wrapper">
+                    <input type="text" name="account" placeholder="手机号或邮箱" required>
+                </div>
+                <div class="verification input-wrapper">
+                    <input type="password" name="password" placeholder="密码" required>
+                </div>
+            </form>
+        </div>-->
+
+        <!-- 注册用的页面 -->
+        <div class="view view-signin selected" data-za-module="SignUpForm">
+            <form class="zu-side-login-box" action="/register/email" id="sign-form-1" method="post">
+                <!--传给服务器必要的信息-->
+                <!--<input type="password" hidden>-->
+                <!--<input type="hidden" name="_xsrf" value="00fd41f28f64c3d9f4fc8103a33d8a89">-->
+
+                <div class="group-inputs">
+                    <div class="name input-wrapper">
+                        <input type="text" name="fullname" placeholder="姓名">
+                    </div>
+                    <div class="email input-wrapper">
+                        <input type="text" class="account" name="phone_num" placeholder="手机号">
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" name="password" placeholder="密码（不少于6位）">
+                    </div>
+                </div>
+                <div class="button-wrapper command">
+                    <button class="sign-button submit" type="submit">注册知乎</button>
+                </div>
+
+            </form>
+
+
+            <span class="span-text">点击「注册」按钮，即代表你同意<a href="#">《知乎协议》</a></span>
+        </div>
+
+        <div class="download">下载知乎 App</div>
+        </div>
+    </div>
+</div>
+<!--一个很赞的网页背景效果 canvas-nest.js-->
+<script src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</body>
+</html>
