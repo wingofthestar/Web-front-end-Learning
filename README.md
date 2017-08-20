@@ -22,7 +22,7 @@
 ![Image text](https://github.com/wingofthestar/Web-front-end-Learning/blob/master/zhiHuLoginTab.png)
 开始看了较多知乎网页的源码，尝试着跟着写，结果太复杂以至于，变成复制黏贴式，于是还是放弃，按照自己的方式去写
 知识点有:
- * 结构，看html的源码是几乎看下去的，看看人家是怎么样组织DOM结构，至于CSS嘛，实在吃不消看。
+ * 结构，看html的源码的机构还是看的下去的，看看人家是怎么样组织DOM结构，至于CSS嘛，实在吃不消看。
  * 不定宽高的div块等的水平垂直居中，搜索一下有很多方法，这里采用用一个“ghost”伪元素（看不见的伪元素）和 inline-block / vertical
  -align 可以搞定居中
  * 背景图用了canvas-nest.js,看上去效果不错(https://github.com/hustcc/canvas-nest.js )
