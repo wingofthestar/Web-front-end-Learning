@@ -6,7 +6,7 @@
 
 ## Baidu Tab
 模范Baidu Tab页
-![Image text](https://github.com/wingofthestar/Web-front-end-Learning/blob/master/Baidu_Tab.png?raw=true)
+![Image text](https://github.com/wingofthestar/Web-front-end-Learning/blob/master/Baidu_Tab.png)
 
 说明：并没有严格的仿照Baidu的网页来，关键是上手练习，Search New Tab页的搜索界面是用全部div布局的，问题比较少，这里尝试用span元素
 转换为inline-block布局出现的问题有:
@@ -19,6 +19,7 @@
 采用了字体图标（https://github.com/FortAwesome/Font-Awesome ）按照文档直接引用即可。
 
 ## ZhiHuLoginTab
+![Image text](https://github.com/wingofthestar/Web-front-end-Learning/blob/master/zhiHuLoginTab.png)
 开始看了较多知乎网页的源码，尝试着跟着写，结果太复杂以至于，变成复制黏贴式，于是还是放弃，按照自己的方式去写
 知识点有:
  * 结构，看html的源码是几乎看下去的，看看人家是怎么样组织DOM结构，至于CSS嘛，实在吃不消看。
